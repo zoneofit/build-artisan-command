@@ -1,0 +1,17 @@
+<?php
+
+namespace {{ namespace }};
+
+class {{ name }}
+{
+	{{# properties}}
+	public ${{ . }};
+	{{/ properties}}
+
+	function __construct({{ arguments }})
+	{
+		{{# properties}}
+		$this->{{ . }} = ${{ . }};
+		{{/ properties}}
+	}
+}
